@@ -9,3 +9,6 @@ jobs:
   build-android:
     docker:
       - image: circleci/android:api-25-alpha
+    steps:
+      - checkout
+      - run: echo "hello world"
